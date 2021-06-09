@@ -1,36 +1,35 @@
-package javaproject;
+package sserim;
+
 import java.util.Scanner;
 
 public class project10 {
-	 public static int add(int a, int b) {
-	      return a + b;
 
-	   }
+	public static int add(int a, int b) {
+		return a + b;
+	}
 
-	   public static int substract(int a, int b) {
-	      return a - b;
-	   }
+	public static int substract(int a, int b) {
+		return a - b;
+	}
 
-	   public static int multiply(int a, int b) {
-	      return a * b;
-	   }
+	public static int multiply(int a, int b) {
+		return a * b;
+	}
 
-	   public static double divide(int a, int b) {
+	public static double divide(int a, int b) {
+		try {
+			return a / b;
+			
+		} catch (Exception e) {
+			System.out.println("0으로 나눌 수 없습니다.");			
+		}
+		
+		return b;
+	}
 
-	      return (double)a / (double)b;
-
-	   }
-
-	   public static void main(String[] args) {
-	      Scanner sc = new Scanner(System.in);
-	      int a = sc.nextInt();
-	      int b = sc.nextInt();
-	      System.out.print(add(a, b) + "\n");
-	      System.out.print(substract(a, b) + "\n");
-	      System.out.print(multiply(a, b) + "\n");
-	      System.out.print(divide(a, b));
-	      sc.close();
-
-	   }
-
+	public static void main(String[] args) {
+		// (3+5-2)*2/3
+		System.out.print("(3+5-2)*2/3 = ");
+		System.out.println(divide(multiply(substract(add(3, 5), 2), 2), 3));
+	}
 }
