@@ -1,4 +1,5 @@
 package javaproject;
+
 import java.util.Scanner;
 
 public class project4 {
@@ -6,15 +7,13 @@ public class project4 {
 		Scanner sc = new Scanner(System.in);
 		int n;
 		n = sc.nextInt();
-		for(int i=1;i<=n;i++)
-		{
-			for(int j=0;j<i;j++)
-			{
+		for (int i = 1; i <= n; i++) {
+			for (int j = 0; j < i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
 		sc.close();
-		}
+	}
 
 }
