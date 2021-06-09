@@ -1,4 +1,5 @@
 package javaproject;
+
 import java.util.Scanner;
 
 public class project5 {
@@ -6,18 +7,17 @@ public class project5 {
 		Scanner sc = new Scanner(System.in);
 		int n;
 		n = sc.nextInt();
-		if(n>=90)
-			System.out.println("ÇĞÁ¡ : A");
-		else if(80<=n&&n<90)
-			System.out.println("ÇĞÁ¡ : B");
-		else if(70<=n&&n<80)
-			System.out.println("ÇĞÁ¡ : C");
-		else if(60<=n&&n<70)
-			System.out.println("ÇĞÁ¡ : D");
-		else 
-			System.out.println("ÇĞÁ¡ : F");
+		if (n >= 90)
+			System.out.println("Ã‡ÃÃÂ¡ : A");
+		else if (80 <= n && n < 90)
+			System.out.println("Ã‡ÃÃÂ¡ : B");
+		else if (70 <= n && n < 80)
+			System.out.println("Ã‡ÃÃÂ¡ : C");
+		else if (60 <= n && n < 70)
+			System.out.println("Ã‡ÃÃÂ¡ : D");
+		else
+			System.out.println("Ã‡ÃÃÂ¡ : F");
 		sc.close();
 	}
-
 
 }
