@@ -12,7 +12,7 @@ public class project6 {
 			student[i] = sc.nextInt();
 			sum += student[i];
 		}
-		System.out.println("ÇÕ°è : " + sum + "\nÆò±Õ : " + (sum / 10));
+		System.out.println("합계 : " + sum + "\n평균 : " + (sum / 10));
 		sc.close();
 	}
 }
